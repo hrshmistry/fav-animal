@@ -5,9 +5,9 @@ export default function App() {
   const [likeCounter, setLikeCounter] = useState(0);
 
   function LikeClickHandler() {
-    var newLikeCounter = likeCounter + 1;
+    var newLikeCounter = likeCounter + 1; // processing
     // likeCounter in the view
-    setLikeCounter(newLikeCounter);
+    setLikeCounter(newLikeCounter); // processing/output
   }
 
   return (
