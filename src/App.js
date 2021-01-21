@@ -5,6 +5,7 @@ var emojiDictionary = {
   "🙈": "See-No-Evil Monkey",
   "🐶": "Dog Face",
   "🦄": "Unicorn",
+  "👻": "boo",
   "🦊": "Fox",
   "🐼": "Panda",
   "🦥": "Sloth"
@@ -36,7 +37,7 @@ export default function App() {
       <h1>Did you find your fav one?</h1>
       <input onChange={emojiInputHandler}></input>
       <h2>{meaning}</h2>
-      <h3>emojis we know</h3>{" "}
+      <h3 style={{ color: "gray" }}>emojis we know</h3>{" "}
       {emojiWeKnow.map(function (emoji) {
         return (
           <span
