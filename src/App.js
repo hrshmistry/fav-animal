@@ -6,6 +6,7 @@ var likeCounter = 0;
 export default function App() {
   function LikeClickHandler() {
     likeCounter = likeCounter + 1;
+    // this is likeCounter in the console
     console.log("clicked", likeCounter);
   }
 
