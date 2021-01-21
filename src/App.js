@@ -2,18 +2,17 @@ import React, { useState } from "react";
 import "./styles.css";
 
 export default function App() {
-  const [likeCounter, setLikeCounter] = useState(0);
-
-  function LikeClickHandler() {
-    // var newLikeCounter = likeCounter + 1; // processing
-    // likeCounter in the view
-    setLikeCounter(likeCounter + 1); // processing/output
+  const [userInput, setUserInput] = useState("");
+  function onChangeHandler(event) {
+    console.log(event.target.value);
+    setUserInput(event.target.value);
   }
 
   return (
     <div className="App">
       <h1>inside out</h1>
-      <button onClick={LikeClickHandler}>Like me! </button> {likeCounter}
+      <input onChange={onChangeHandler}></input>
+      <div>Welcome {userInput}</div>
     </div>
   );
 }
