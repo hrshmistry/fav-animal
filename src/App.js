@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import "./styles.css";
 
 var emojiDictionary = {
-  "😊": "smiling",
-  "😳": "disbelief",
-  "😔": "sad",
-  "🥡": "takeout box",
-  "❤️": "love",
-  "😑": "annoyance"
+  "🙈": "See-No-Evil Monkey",
+  "🐶": "Dog Face",
+  "🦄": "Unicorn",
+  "🦊": "Fox",
+  "🐼": "Panda",
+  "🦥": "Sloth"
 };
 
 var emojiWeKnow = Object.keys(emojiDictionary);
@@ -33,7 +33,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>inside out</h1>
+      <h1>Did you find your fav one?</h1>
       <input onChange={emojiInputHandler}></input>
       <h2>{meaning}</h2>
       <h3>emojis we know</h3>{" "}
