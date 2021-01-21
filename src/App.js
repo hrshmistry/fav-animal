@@ -1,20 +1,18 @@
 import React from "react";
 import "./styles.css";
 
-var color = "blue";
-var username = prompt("Give me your username!");
+var likeCounter = 0;
 
 export default function App() {
-  // function LikeClickHandler() {
-  //   console.log("clicked.");
-  // }
+  function LikeClickHandler() {
+    likeCounter = likeCounter + 1;
+    console.log("clicked", likeCounter);
+  }
 
   return (
     <div className="App">
-      <h1>
-        inside out <span style={{ color: color }}> {username} </span>
-      </h1>
-      {/* <button onClick={LikeClickHandler}>Like me!</button> */}
+      <h1>inside out {likeCounter}</h1>
+      <button onClick={LikeClickHandler}>Like me!</button>
     </div>
   );
 }
