@@ -1,15 +1,15 @@
 import React from "react";
 import "./styles.css";
 
-var welcomeMsg = "Welcome";
-var color = "blue";
-// var username = prompt("Give me your name!");
-var username = "Harsh";
-
 export default function App() {
+  function LikeClickHandler() {
+    console.log("clicked.");
+  }
+
   return (
     <div className="App">
       <h1>inside out</h1>
+      <button onClick={LikeClickHandler}>Like me!</button>
     </div>
   );
 }
