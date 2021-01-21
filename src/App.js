@@ -9,9 +9,7 @@ var username = "Harsh";
 export default function App() {
   return (
     <div className="App">
-      <h1>
-        {welcomeMsg} <span style={{ color: color }}> {username} </span>
-      </h1>
+      <h1>inside out</h1>
     </div>
   );
 }
