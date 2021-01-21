@@ -1,19 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import "./styles.css";
 
-var likeCounter = 0;
-
 export default function App() {
+  const [likeCounter, setLikeCounter] = useState(0);
+
   function LikeClickHandler() {
-    likeCounter = likeCounter + 1;
-    // this is likeCounter in the console
-    console.log("clicked", likeCounter);
+    var newLikeCounter = likeCounter + 1;
+    // likeCounter in the view
+    setLikeCounter(newLikeCounter);
   }
 
   return (
     <div className="App">
-      <h1>inside out {likeCounter}</h1>
-      <button onClick={LikeClickHandler}>Like me!</button>
+      <h1>inside out</h1>
+      <button onClick={LikeClickHandler}>Like me! </button> {likeCounter}
     </div>
   );
 }
