@@ -5,9 +5,9 @@ export default function App() {
   const [likeCounter, setLikeCounter] = useState(0);
 
   function LikeClickHandler() {
-    var newLikeCounter = likeCounter + 1; // processing
+    // var newLikeCounter = likeCounter + 1; // processing
     // likeCounter in the view
-    setLikeCounter(newLikeCounter); // processing/output
+    setLikeCounter(likeCounter + 1); // processing/output
   }
 
   return (
@@ -17,3 +17,8 @@ export default function App() {
     </div>
   );
 }
+
+/*
+React is "VISER"
+View -> Interect -> State in Event handler -> React
+*/
